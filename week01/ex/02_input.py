@@ -1,2 +1,2 @@
-user = input("Please Enter your Name:")
-print(f"Welcome {user} to the Python Bootcamp 2022")
+user = input("Please input your name:")
+print(f"Greetings, {user} and welcome to the Python Bootcamp")
