@@ -1,2 +1,2 @@
 user = input("Enter a string:")
-p
+print(user.swapcase())
