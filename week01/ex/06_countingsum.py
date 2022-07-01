@@ -8,4 +8,4 @@ while True:
         else:
             print("This input must be a valid number!")
 result = sum(list)
-print(f"The Sum is:{result}")
+print(f"Sum = {result}")

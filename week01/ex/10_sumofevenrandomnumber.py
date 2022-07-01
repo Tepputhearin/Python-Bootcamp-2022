@@ -1,7 +1,7 @@
 user = int(input("Input Number:"))
 import random
 list = []
-while len(list) < user:
+for i in range(0,user):
     a = random.randint(2000,3000)
     if a%2 == 0:
         add = list.append(a)

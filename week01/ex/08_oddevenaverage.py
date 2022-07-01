@@ -12,4 +12,4 @@ if user.isdecimal():
     print(f"Average of odd numbers = {sum(oddSum) / len(oddSum)}")
     print(f"Average of even numbers = {sum(evenSum) / len(evenSum)}")
 else:
-    print("Invalid input")
+    print("Invalid Input")
