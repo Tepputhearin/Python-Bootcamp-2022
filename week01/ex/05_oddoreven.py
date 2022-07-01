@@ -1,8 +1,8 @@
 try:
     user_num = int(input("Input a number:\n"))
     if user_num % 2 == 0:
-        print("The number you have entered is Even")
+        print("Even Number")
     else:
-        print("The number you have entered is Odd")
+        print("Odd Number")
 except ValueError:
     print("Not a valid Number")

@@ -2,8 +2,7 @@ num = 0
 oddSum = []
 evenSum = []
 try:
-    user = int(input("Input a number:"))
-    num = user
+    num = int(input("Input a number:"))
 except ValueError:
     print("Invalid input")
 for i in range(num+1):

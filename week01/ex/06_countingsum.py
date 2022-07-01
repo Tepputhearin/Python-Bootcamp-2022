@@ -6,6 +6,6 @@ while True:
         elif user.isdecimal():
             list.append(int(user))
         else:
-            print("This input must be a valid number")
+            print("This input must be a valid number!")
 result = sum(list)
 print(f"The Sum is:{result}")
