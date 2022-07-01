@@ -1,5 +1,5 @@
 def string():
-    user = input("Input a text:")
+    user = input("Input a string:")
     if user == "":
         print("The string is empty")
     else:

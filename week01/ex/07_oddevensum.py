@@ -2,10 +2,10 @@ num = 0
 oddSum = []
 evenSum = []
 try:
-    user = int(input("input:"))
+    user = int(input("Input a number:"))
     num = user
 except ValueError:
-    print("invalid input")
+    print("Invalid input")
 for i in range(num+1):
     if i%2 == 0:
         evenSum.append(i)
