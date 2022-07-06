@@ -4,4 +4,4 @@ def search_in_tuple(tup,search):
             return f"Element found at index: {i}"
     else:
         return "Element not found in the tuple"
-print(search_in_tuple((20,15,10,30),30))
+print(search_in_tuple((20,15,10,30),10))
