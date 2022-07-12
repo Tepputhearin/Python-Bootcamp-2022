@@ -18,7 +18,7 @@ while True:
             replace = input("Please input a replacement string:\n")
             num_re = int(input("How many occurrences do you want to replace?\n"))
             num_re2 = num_re - Para.count(up_beg_search)+1
-            Para_re = Para.replace(search , replace, num_re2)
+            Para_re = Para.replace(search, replace, num_re2)
             Para_re2 = Para_re.replace(up_beg_search, replace, Para.count(up_beg_search))
             print(f"{num_re} words has be replaced from the paragraph")
             print(Para_re2)
