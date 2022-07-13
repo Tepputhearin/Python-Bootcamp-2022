@@ -20,7 +20,7 @@ def dice_rolls(int_number):                              # function use to prepa
             print(f"{after_roll}\nRESULT:{result}\n{after_roll}")
     return
 
-# Operation start here:
+# Operation starts here:
 
 
 print(intro_message)
