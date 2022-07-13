@@ -16,7 +16,7 @@ def dice_rolls(int_number):                              # function use to prepa
             for i in range(0, int_number):
                 random_dice = random.randint(1, 6)
                 print(f"Dice {i+1} : {random_dice}")     # Display rolls and output of dice each loop
-                result += random_dice                    # Add to value for each loop
+                result += random_dice                    # Add to value result for each loop
             print(f"{after_roll}\nRESULT:{result}\n{after_roll}")
     return
 
