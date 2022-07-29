@@ -2,7 +2,7 @@ def bin_to_dec(num):
     num = str(num)
     b = {'0','1'}
     t = set(num)
-    if b == t or t =={'0'} or t== {'1'}:
+    if b == t or t == {'0'} or t == {'1'}:
         num = int(num)
         decimal = 0
         i = 0
