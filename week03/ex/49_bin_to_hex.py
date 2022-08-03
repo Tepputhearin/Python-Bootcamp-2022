@@ -14,7 +14,7 @@ def bin_to_hex(num):
             decimal = decimal + dec * pow(2, i)
             num = num // 10
             i += 1
-        while decimal> 0:
+        while decimal > 0:
             remain = decimal % 16
             hexa = table[remain] + hexa
             decimal = decimal // 16
