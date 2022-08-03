@@ -12,4 +12,6 @@ def or_operation(hex1,hex2):
     print(f"{new_result1}\n{new_result2}\n")
     print(result)
     return
+
+
 or_operation("33","3D")

@@ -1,4 +1,4 @@
-def matrix_subraction(matrix1, matrix2):
+def matrix_subtraction(matrix1, matrix2):
     sum = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
     for i in range(len(matrix1)):
         for j in range(len(matrix1[0])):
@@ -7,4 +7,4 @@ def matrix_subraction(matrix1, matrix2):
         print(k)
 
 
-matrix_subraction([[10,5,4,2],[5,10,9,55],[9,19,69,8],[7,8,4,75]],[[12,65,34,2],[1,5,8,45],[7,21,63,8],[0,78,4,65]])
+matrix_subtraction([[10,5,4,2],[5,10,9,55],[9,19,69,8],[7,8,4,75]],[[12,65,34,2],[1,5,8,45],[7,21,63,8],[0,78,4,65]])

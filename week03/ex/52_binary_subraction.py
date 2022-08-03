@@ -1,28 +1,27 @@
-def binary_addition(num1,num2):
-    Num1 = []
-    Num2 = []
-    Num3 = []
-    new_Num1 = []
-    new_Num2 = []
-    new_Num3 =[]
-    sub = num1 - num2
-    dict = {"Num1": Num1, "Num2": Num2, "new_Num1": new_Num1, "new_Num2": new_Num2, "Num3": Num3, "new_Num3": new_Num3}
-    Nums = [num1, num2, sub]
-    l = 0
-    for i in Nums:
-        j, p = "Num"+f"{1+l}", "new_Num"+f"{1+l}"
-        j = dict[j]
-        l += 1
-        while i != 0:
-            bin_num = int(i % 2)
-            i = int(i / 2)
-            j.append(str(bin_num))
-        for d in range(len(j) - 1, -1, -1):
-            dict[p].append(j[d])
-    print("Num1         :"+"".join(new_Num1))
-    print("Num2         :"+"".join(new_Num2))
-    print("Sum(Binary)  :"+"".join(new_Num3))
-    print("Sum(Decimal) :"+str(sub))
+def binary_subtraction(num1,num2):
+    num3 = num1 - num2
+    carry = 0
+    result = ""
+    num1 = bin(num1)[2:]
+    num2 = bin(num2)[2:]
+    max_len = max(len(num1),len(num2))
+    num1 = num1.zfill(max_len)
+    num2 = num2.zfill(max_len)
+    for i in range(len(num1) - 1, -1, -1):
+        num = int(num1[i]) - int(num2[i]) - carry
+        if num % 2 == 1:
+            result += "1"
+        else:
+            result += "0"
+        if num < 0:
+            carry = 1
+        else:
+            carry = 0
+    if carry != 0:
+        result += "01"
+    print(f"Num1                   :{num1}\nNum2                   :{num2}")
+    print(f"Difference(Binary)     :{result[::-1]}\nDifference(Decimal)    :{num3}")
     return
 
-binary_addition(60,50)
+
+binary_subtraction(60,50)
