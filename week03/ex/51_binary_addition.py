@@ -4,6 +4,9 @@ def binary_addition(num1,num2):
     result = ""
     num1 = bin(num1)[2:]
     num2 = bin(num2)[2:]
+    max_len = max(len(num1), len(num2))
+    num1 = num1.zfill(max_len)
+    num2 = num2.zfill(max_len)
     for i in range(len(num1)-1,-1,-1):
         num = str(int(num1[i]) + int(num2[i]) + carry)
         carry = 0
