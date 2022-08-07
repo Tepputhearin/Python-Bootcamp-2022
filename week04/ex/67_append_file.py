@@ -15,6 +15,7 @@ def append_file(filename):
     read = open(f"D:/New Folder/Test2/b/{filename}", 'r')
     re = read.readline()
     print(re)
+    read.close()
     return
 
 

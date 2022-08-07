@@ -6,6 +6,7 @@ def write_file(filename, content):
             if user == "Y":
                 wri = open(f"D:/New Folder/Test2/a/{filename}", mode='w')
                 wri.write(content)
+                wri.close()
                 return 1
             elif user == "N":
                 return 0
@@ -14,5 +15,6 @@ def write_file(filename, content):
     else:
         wri = open(f"D:/New Folder/Test2/a/{filename}", mode='w')
         wri.write(content)
+        wri.close()
     return 1
 write_file("Ha.txt", "Nice to meet you")
