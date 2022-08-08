@@ -1,6 +1,8 @@
 def current_path():
     import os
     cwd = os.getcwd()
-    print(str(cwd))
+    return str(cwd)
 
-current_path()
+
+
+print(current_path())
