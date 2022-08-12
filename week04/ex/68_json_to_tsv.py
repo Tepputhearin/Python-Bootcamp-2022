@@ -7,7 +7,7 @@ def json_to_tsv(json_name, tsv_name):
         data = json.load(f)
         f.close()
         out = open(f"D:/New Folder/Test2/C/{tsv_name}.tsv", 'w')
-        dw = csv.writer(out, delimiter='\t')
+        dw = csv.writer(out,delimiter='\t')
         data2 = data[0].keys()
         dw.writerow(data2)
         for i in range(len(data)):

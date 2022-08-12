@@ -1,6 +1,6 @@
 import requests
 
-link = "http://maps.googleapis.com/maps/api/geocode/json"
+link = "http://localhost:3000/dept"
 
 x = requests.get(link)
 print(x.text)

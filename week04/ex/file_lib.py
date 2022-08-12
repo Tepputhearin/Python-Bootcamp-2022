@@ -1,11 +1,13 @@
 class FileLib:
     def inspect(self):
         import os
-        o = os.getcwd()
-        if os.path.isfile(o):
+        path = os.getcwd()
+        if os.path.isfile(path):
             print("It is a file")
-        elif os.path.isdir(o):
+        elif os.path.isdir(path):
             print("It is a folder")
+        else:
+            print("Doesn't exist")
         return
     def current_path(self):
         import os
@@ -16,7 +18,7 @@ class FileLib:
         import os
         if os.path.exists(f"D:/New Folder/Test2/a/{filename}") is True:
             op = open(f"D:/New Folder/Test2/a/{filename}", mode='r')
-            op_read = op.readline()
+            op_read = op.readlines()
             op.close()
             print(op_read)
             return

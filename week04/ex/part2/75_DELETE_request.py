@@ -1,6 +1,6 @@
 import requests
 
-r = requests.delete("https://httpbin.org / delete", data ={'key':'value'})
+r = requests.delete("http://localhost:3000/dept", json = {"somekey": "somevalue"})
 
 print(r)
 print(r.text)

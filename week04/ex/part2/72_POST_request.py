@@ -1,6 +1,6 @@
 import requests
 
-link = "https://httpbin.org"
+link = "http://localhost:3000/dept"
 
 myobj = {"somekey": "somevalue"}
 

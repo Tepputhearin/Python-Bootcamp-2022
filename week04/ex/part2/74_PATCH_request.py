@@ -1,6 +1,6 @@
 import requests
 
-r = requests.patch("https://httpbin.org / patch", data = {'key':'value'})
+r = requests.patch("http://localhost:3000/dept", json={"somekey": "somevaluea"})
 
 print(r)
 

@@ -2,7 +2,7 @@ def read_file(string):
     import os
     if os.path.exists(f"D:/New Folder/Test2/a/{string}") is True:
         op = open(f"D:/New Folder/Test2/a/{string}", mode='r')
-        op_read = op.readline()
+        op_read = op.readlines()
         op.close()
         return op_read
     elif os.path.exists(f"D:/New Folder/Test2/a/{string}") is False:
