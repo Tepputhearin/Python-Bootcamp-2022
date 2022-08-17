@@ -1,6 +1,6 @@
 import requests
+id = input("Id deletetion:")
+r = requests.delete(f"http://localhost:3000/dept/{id}")
 
-r = requests.delete("http://localhost:3000/dept", json = {"somekey": "somevalue"})
-
-print(r)
+print(r.status_code)
 print(r.text)
